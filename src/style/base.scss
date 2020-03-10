@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 *,
 *::after,
 *::before {
@@ -16,7 +18,7 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   padding: 3rem;
 
   -webkit-font-smoothing: antialiased;
@@ -26,10 +28,6 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-@import './App.css';
-@import './Header.css';
-@import './Button.css';

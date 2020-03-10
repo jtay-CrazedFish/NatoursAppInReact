@@ -5,7 +5,7 @@ function Button(props) {
   return (
     <a
       href="#"
-      className={classnames("btn", `btn-${props.color}`, "btn-animated")}
+      className={classnames("btn", `btn--${props.color}`, "btn--animated")}
     >
       Discover our Tours
     </a>

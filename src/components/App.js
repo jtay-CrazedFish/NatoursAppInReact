@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import Header from "./Header";
-import logo from "../logo.svg";
 import About from "./About";
+import Features from "./Features";
 
 function App() {
   return (
@@ -9,6 +9,7 @@ function App() {
       <Header></Header>
       <main>
         <About />
+        <Features />
       </main>
 
       {/* <section class="grid-test">

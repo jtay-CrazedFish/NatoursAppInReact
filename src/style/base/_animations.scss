@@ -33,7 +33,7 @@
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(3rem);
+    transform: translateY(5rem);
   }
 
   90% {
@@ -43,5 +43,25 @@
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+
+@keyframes spinFigureClockwise {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-0.5rem) rotate(360deg) scale(1.05);
+  }
+}
+
+@keyframes spinClockwiseFigureBack {
+  0% {
+    transform: translateY(-0.5rem) rotate(360deg) scale(1.05);
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
   }
 }

@@ -4,10 +4,14 @@ import classnames from "classnames";
 function Button(props) {
   return (
     <a
-      href="#"
-      className={classnames("btn", `btn--${props.color}`, "btn--animated")}
+      href={props.href ? props.href : "#"}
+      className={classnames(
+        props.class,
+        `btn--${props.color}`,
+        props.animated ? "btn--animated" : ""
+      )}
     >
-      Discover our Tours
+      {props.text}
     </a>
   );
 }

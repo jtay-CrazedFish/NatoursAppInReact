@@ -14,7 +14,12 @@ function Header() {
           <span class="primary-heading--main">Outdoors</span>
           <span class="primary-heading--sub">is where life happens</span>
         </h1>
-        <Button color="white"></Button>
+        <Button
+          text="Discover our Tours"
+          class="btn"
+          color="white"
+          animated={true}
+        />
       </div>
     </header>
   );

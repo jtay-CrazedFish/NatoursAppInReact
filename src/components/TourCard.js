@@ -2,8 +2,6 @@ import React from "react";
 import classnames from "classnames";
 import Button from "./Button";
 
-function generateDetails(arg) {}
-
 function TourCard(props) {
   return (
     <div class="tour-card">

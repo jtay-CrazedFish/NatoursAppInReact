@@ -3,6 +3,7 @@ import Header from "./Header";
 import About from "./About";
 import Features from "./Features";
 import Tours from "./Tours";
+import Stories from "./Stories";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <About />
         <Features />
         <Tours />
+        <Stories />
       </main>
 
       {/* <section class="grid-test">

@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Header from "./Header";
 import About from "./About";
 import Features from "./Features";
+import Tours from "./Tours";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <main>
         <About />
         <Features />
+        <Tours />
       </main>
 
       {/* <section class="grid-test">

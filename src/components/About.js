@@ -1,13 +1,16 @@
 import React from "react";
 import Button from "./Button";
+import Heading2 from "./Heading2";
 import { nat1large, nat2large, nat3large } from "../img";
 
 function About() {
   return (
     <section class="section-about">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">Exciting tours for adventurous people</h2>
-      </div>
+      <Heading2
+        text="Exciting tours for adventurous people"
+        size="big"
+        center={true}
+      />
       <div class="row">
         <div class="col-1-of-2">
           <h3 class="heading-tertiary u-margin-bottom-small">

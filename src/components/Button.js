@@ -16,4 +16,18 @@ function Button(props) {
   );
 }
 
+export function NormalButton(props) {
+  return (
+    <button
+      className={classnames(
+        props.class,
+        `btn--${props.color}`,
+        props.animated ? "btn--animated" : ""
+      )}
+    >
+      {props.text}
+    </button>
+  );
+}
+
 export default Button;

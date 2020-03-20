@@ -4,6 +4,7 @@ import Button from "./Button";
 import { nat8, nat9 } from "../img/index";
 import videoMp4 from "../img/video.mp4";
 import videoWebm from "../img/video.webm";
+import Heading2 from "./Heading2";
 
 function Stories() {
   return (
@@ -15,9 +16,11 @@ function Stories() {
           Your browser is not supported!
         </video>
       </div>
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">We make people genuinly happy</h2>
-      </div>
+      <Heading2
+        text="We make people genuinely happy"
+        size="big"
+        center={true}
+      />
 
       <div class="row">
         <Story

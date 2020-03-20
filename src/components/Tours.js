@@ -1,6 +1,7 @@
 import React from "react";
 import TourCard from "./TourCard";
 import Button from "./Button";
+import Heading2 from "./Heading2";
 
 const details = {
   ONE: [
@@ -41,9 +42,7 @@ const prices = {
 function Tours() {
   return (
     <section class="section-tours">
-      <div class="u-center-text u-margin-bottom-big">
-        <h2 class="heading-secondary">Most Popular Tours</h2>
-      </div>
+      <Heading2 text="Most Popular Tours" size="big" center={true} />
       <div class="row">
         <div class="col-1-of-3">
           <TourCard

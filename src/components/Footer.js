@@ -1,6 +1,7 @@
 import React from "react";
 import FooterNavigation from "./FooterNavigation";
 import { greenLogo2 } from "../img";
+import CommonLink from "./CommonLink";
 
 const linkLabels = [
   { ref: "#", name: "Company" },
@@ -30,17 +31,14 @@ function Footer() {
         <div class="col-1-of-2">
           <p class="footer__copywrite">
             Built by{" "}
-            <a href="#" class="footer__link">
-              Jacob Taylor
-            </a>{" "}
-            using the online course by{" "}
-            <a href="#" class="footer__link">
-              Jonas Schmedtmann
-            </a>
-            . Learn more by taking his course{" "}
-            <a href="#" class="footer__link">
-              Advanced css and sass
-            </a>
+            <CommonLink linkClass="footer__link" content="Jacob Taylor" /> using
+            the online course by{" "}
+            <CommonLink linkClass="footer__link" content="Jonas Schmedtmann" />.
+            Learn more by taking his course{" "}
+            <CommonLink
+              linkClass="footer__link"
+              content="Advanced css and sass"
+            />
             . Copywrite &copy; by Jonas Schmedtmann.
           </p>
         </div>

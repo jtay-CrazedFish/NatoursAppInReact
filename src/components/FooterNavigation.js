@@ -1,13 +1,16 @@
 import React from "react";
+import CommonLink from "./CommonLink";
 
 function FooterNavigation(props) {
   return (
     <ul class={props.listClass}>
       {props.linkLabels.map(label => (
         <li class={props.itemClass}>
-          <a href={label.ref ? label.ref : "#"} class={props.linkClass}>
-            {label.name}
-          </a>
+          <CommonLink
+            reference={label.ref ? label.ref : "#"}
+            linkClass={props.linkClass}
+            content={label.name}
+          />
         </li>
       ))}
     </ul>

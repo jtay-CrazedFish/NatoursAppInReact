@@ -1,0 +1,52 @@
+import React from "react";
+import FooterNavigation from "./FooterNavigation";
+import { greenLogo2 } from "../img";
+
+const linkLabels = [
+  { ref: "#", name: "Company" },
+  { ref: "#", name: "Contact Us" },
+  { ref: "#", name: "Careers" },
+  { ref: "#", name: "Privacy Policy" },
+  { ref: "#", name: "Terms" }
+];
+
+function Footer() {
+  return (
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src={greenLogo2} alt="Full Logo" class="footer__logo" />
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <FooterNavigation
+              listClass="footer__list"
+              itemClass="footer__item"
+              linkClass="footer__link"
+              linkLabels={linkLabels}
+            />
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <p class="footer__copywrite">
+            Built by{" "}
+            <a href="#" class="footer__link">
+              Jacob Taylor
+            </a>{" "}
+            using the online course by{" "}
+            <a href="#" class="footer__link">
+              Jonas Schmedtmann
+            </a>
+            . Learn more by taking his course{" "}
+            <a href="#" class="footer__link">
+              Advanced css and sass
+            </a>
+            . Copywrite &copy; by Jonas Schmedtmann.
+          </p>
+        </div>
+      </div>
+    </footer>
+  );
+}
+
+export default Footer;

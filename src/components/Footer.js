@@ -1,7 +1,7 @@
 import React from "react";
-import FooterNavigation from "./FooterNavigation";
+import NavigationList from "./NavigationList";
 import { greenLogo2 } from "../img";
-import CommonLink from "./CommonLink";
+import { CommonLink } from "./Links";
 
 const linkLabels = [
   { ref: "#", name: "Company" },
@@ -20,7 +20,7 @@ function Footer() {
       <div class="row">
         <div class="col-1-of-2">
           <div class="footer__navigation">
-            <FooterNavigation
+            <NavigationList
               listClass="footer__list"
               itemClass="footer__item"
               linkClass="footer__link"

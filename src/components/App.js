@@ -6,10 +6,12 @@ import Tours from "./Tours";
 import Stories from "./Stories";
 import Booking from "./Booking";
 import Footer from "./Footer";
+import Navigation from "./Navigation";
 
 function App() {
   return (
     <Fragment>
+      <Navigation />
       <Header />
       <main>
         <About />

@@ -19,6 +19,7 @@ import nat7 from "./nat-7.jpg";
 import nat8 from "./nat-8.jpg";
 import nat9 from "./nat-9.jpg";
 import nat10 from "./nat-10.jpg";
+import navIcon from "./geometric-nav-icon.png";
 
 export {
   favicon,
@@ -41,5 +42,6 @@ export {
   nat7,
   nat8,
   nat9,
-  nat10
+  nat10,
+  navIcon
 };

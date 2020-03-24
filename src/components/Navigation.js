@@ -15,7 +15,7 @@ function Navigation() {
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
       <label for="navi-toggle" class="navigation__button">
-        Menu
+        <span class="navigation__icon">&nbsp;</span>
       </label>
       <div class="navigation__background">&nbsp;</div>
       <nav class="navigation__nav">
@@ -26,7 +26,7 @@ function Navigation() {
           linkLabels={linkLabels}
           hasIcon={true}
           icon={navIcon}
-          imageClass="navigation__icon"
+          imageClass="navigation__bullet"
         />
       </nav>
     </div>

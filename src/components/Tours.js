@@ -41,7 +41,7 @@ const prices = {
 
 function Tours() {
   return (
-    <section class="section-tours">
+    <section class="section-tours" id="Tours">
       <Heading2 text="Most Popular Tours" size="big" center={true} />
       <div class="row">
         <div class="col-1-of-3">

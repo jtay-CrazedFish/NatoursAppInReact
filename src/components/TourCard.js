@@ -44,7 +44,13 @@ function TourCard(props) {
             <p className="tour-card__price-only">Only</p>
             <p className="tour-card__price-value">{props.price}</p>
           </div>
-          <Button text="Book Now!" class="btn" color="white" animated={true} />
+          <Button
+            href="#popup"
+            text="Book Now!"
+            class="btn"
+            color="white"
+            animated={true}
+          />
         </div>
       </div>
     </div>

@@ -15,6 +15,7 @@ function Header() {
           <span class="primary-heading--sub">is where life happens</span>
         </h1>
         <Button
+          href="#Tours"
           text="Discover our Tours"
           class="btn"
           color="white"

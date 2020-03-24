@@ -7,6 +7,7 @@ import Stories from "./Stories";
 import Booking from "./Booking";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
+import Popup from "./Popup";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Booking />
       </main>
       <Footer />
+      <Popup />
 
       {/* <section class="grid-test">
         <div class="row">

@@ -43,5 +43,5 @@ export {
   nat8,
   nat9,
   nat10,
-  navIcon
+  navIcon,
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import NavigationList from "./NavigationList";
-import { greenLogo2 } from "../img";
+import { greenLogo, greenLogo2, smallGreenLogo, smallGreenLogo2 } from "../img";
 import { CommonLink } from "./Links";
 
 const linkLabels = [
@@ -8,14 +8,24 @@ const linkLabels = [
   { ref: "#", name: "Contact Us" },
   { ref: "#", name: "Careers" },
   { ref: "#", name: "Privacy Policy" },
-  { ref: "#", name: "Terms" }
+  { ref: "#", name: "Terms" },
 ];
 
 function Footer() {
   return (
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src={greenLogo2} alt="Full Logo" class="footer__logo" />
+        <picture class="footer__logo">
+          <source
+            srcset={`${smallGreenLogo} 1x, ${smallGreenLogo2} 2x`}
+            media="(max-width: 37.5rem)"
+          />
+          <img
+            srcset={`${greenLogo} 1x, ${greenLogo2} 2x`}
+            src={greenLogo2}
+            alt="Full Logo"
+          />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">

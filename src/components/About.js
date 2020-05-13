@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import Heading2 from "./Heading2";
-import { nat1large, nat2large, nat3large } from "../img";
+import { nat1large, nat1, nat2large, nat2, nat3large, nat3 } from "../img";
 
 function About() {
   return (
@@ -15,7 +15,7 @@ function About() {
         <div class="col-1-of-2">
           <h3 class="heading-tertiary u-margin-bottom-small">
             {" "}
-            You're going to fall in love with me ;)
+            You're going to love me
           </h3>
           <p class="paragraph">Random text.</p>
           <h3 class="heading-tertiary u-margin-bottom-small">
@@ -28,19 +28,27 @@ function About() {
         <div class="col-1-of-2">
           <div class="composition">
             <img
-              src={nat1large}
+              srcset={`${nat1} 300w, ${nat1large} 1000w`}
+              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
               alt="fig 1"
               class="composition__photo composition__photo--p1"
+              src={nat1large}
             />
+
             <img
-              src={nat2large}
+              srcset={`${nat2} 300w, ${nat2large} 1000w`}
+              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
               alt="fig 2"
               class="composition__photo composition__photo--p2"
+              src={nat1large}
             />
+
             <img
-              src={nat3large}
+              srcset={`${nat3} 300w, ${nat3large} 1000w`}
+              sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
               alt="fig 3"
               class="composition__photo composition__photo--p3"
+              src={nat1large}
             />
           </div>
         </div>

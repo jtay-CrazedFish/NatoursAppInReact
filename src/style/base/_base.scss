@@ -45,3 +45,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+// Highlighting text
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
